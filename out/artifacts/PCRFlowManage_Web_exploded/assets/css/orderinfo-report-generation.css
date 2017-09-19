@@ -1,0 +1,516 @@
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+#progress-bar {
+    width: 130px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    /*left:55px;305px;555px;805px*/
+    left: 805px;
+    z-index: 999;
+    background: url("../images/progress-bar.png") no-repeat;
+}
+
+.order-details{
+    border: 1px solid #ddd;
+}
+.report-details{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f5fbff;
+}
+
+.navigation-bar{
+    width: 1200px;
+    height: 50px;
+    font-size: 16px;
+    color: #333;
+    margin: -10px auto 20px;
+    border: 1px solid;
+    border-color: #5c8ce6 #ddd #ddd #ddd;
+    background-color: white;
+}
+
+.navigation-bar ul{
+    margin: 0;
+    padding:0 20px;
+    line-height: 45px;
+    list-style-type: none;
+}
+
+.navigation-bar ul li{
+    margin-left: 10px;
+    width: 120px;
+    float: left;
+}
+
+.navigation-bar ul li a{
+    margin: 0 28px;
+    text-decoration: none;
+    color: #333;
+}
+
+.chosen{
+    border-bottom: 3px solid #5c8ce6;
+}
+.navigation-bar ul .chosen a{
+    color: #5c8ce6;
+}
+
+#basic-info{
+    width: 1200px;
+    height: 530px;
+    margin: 0 auto 20px;
+    color: #666;
+}
+
+.photo,.info-details{
+    height: 345px;
+    border: 1px solid #ddd;
+    background-color: white;
+    float: left;
+}
+.photo p,.info-details p{
+    padding-left: 30px;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #f5fbff;
+    border-bottom: 1px solid #ddd;
+}
+
+.photo{
+    width: 300px;
+}
+
+.info-details{
+    width: 430px;
+    margin-left: 20px;
+}
+.photo div img{
+    margin: 20px 0 20px 30px;
+    width: 120px;
+    height:120px;
+
+}
+.photo div ul{
+    list-style-type: none;
+    margin-left: 30px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.photo div li span{
+    margin-left: 10px;
+}
+
+.info-details div{
+    height: 293px;
+    background: url("../images/orderinfo-report-generation-bg1.jpg") no-repeat bottom;
+}
+.info-details div hr{
+    height: 2px;
+    color: #ddd;
+    margin: 0;
+}
+.info-details div ul{
+    list-style-type: none;
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.info-details div li span{
+    margin-left: 30px;
+}
+
+.radar-chart{
+    width: 430px;
+    height: 525px;
+    float: right;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 0 20px;
+}
+#radar-life{
+    width: 390px;
+    height: 390px;
+}
+.radar-chart>div{
+    height: 445px;
+    border-bottom: 1px solid #ddd;
+}
+.radar-chart p{
+    font-size: 18px;
+    text-align: center;
+}
+.radar-chart .references{
+    border: none;
+    padding: 15px 0;
+    height: 80px;
+}
+.references span{
+    width: 190px;
+    float: left;
+}
+.references button{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    height: 40px;
+    color: #386cca;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 30px;
+}
+.references button a{
+    text-decoration: none;
+    color: #386cca;
+}
+.references button:hover{
+    background-color: #f5f8ff;
+    color: #386cca;
+}
+
+.border-line{
+    border-left: 1px solid #ddd;
+    height: 50px;
+}
+
+.disease-history{
+    width: 750px;
+    height: 160px;
+    background-color: white;
+    border: 1px solid #ddd;
+    float: left;
+    margin-top: 20px;
+    padding: 40px 0;
+}
+
+.disease-history>div{
+    width: 249px;
+    height: 80px;
+    margin: 0;
+    padding-left: 30px;
+    float: left;
+}
+
+.disease-history div span{
+    font-size: 18px;
+    color: #666;
+    line-height: 80px;
+}
+
+.disease-history div ul{
+    list-style-type: none;
+    float: right;
+    line-height: 34px;
+    margin-top: -10px;
+    margin-right: 40px;
+}
+.disease-history div div{
+    color: #999;
+    float: right;
+    line-height: 80px;
+    font-size:36px;
+    margin-right: 85px;
+}
+
+
+#result-statistics{
+    width: 1200px;
+    height:500px;
+    margin: 0 auto 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.gene-chart{
+    margin: 0;
+    height: 460px;
+    background: url("../images/orderinfo-report-generation-bg2.png") no-repeat 460px 80px;
+}
+
+.gene-chart .mutate-gene{
+    width: 810px;
+    height: 460px;
+    float: left;
+}
+.mutate-gene>div{
+    width: 810px;
+    height: 385px;
+}
+#gene{
+    margin-top: 80px;
+    font-size: 14px;
+    color: #333;
+}
+
+#gene1{
+    color: #29cc96;
+    margin-right: 20px;
+}
+#gene2{
+    color: #f54f4f;
+    margin-right: 20px;
+}
+.mutate-gene>p{
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.mutate-gene p span{
+    margin-left: 50px;
+}
+.gene-num{
+    float: right;
+    font-size: 18px;
+    color: #333;
+    margin-right: 50px;
+}
+
+.gene-num div{
+    margin-top: 190px;
+    color: white;
+    font-size: 18px;
+}
+
+.gene-num div span{
+    margin-left: 60px;
+    margin-right: 40px;
+}
+.gene-num p{
+    margin-left: 50px;
+    margin-top: 170px;
+}
+#health-status{
+    width: 1200px;
+    height:540px;
+    margin: 0 auto 20px;
+}
+#health{
+    margin: 40px auto;
+}
+.whole-status>div{
+    padding: 50px 30px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.site-num{
+    margin-top: 30px;
+}
+
+.site-num>div{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 80px;
+}
+.site-num div span{
+    font-size: 60px;
+    font-weight: lighter;
+    margin-right: 20px;
+    color: #f54f4f;
+}
+.whole-status .ar-round{
+    color: #386cca;
+    margin-right: 10px;
+}
+
+
+#risk-evaluation{
+    width: 1200px;
+    height: 2300px;
+    margin: 0 auto;
+}
+
+#result-statistics>p,
+.health-chart>p,.whole-status>p,
+.system-evaluation>p,.system-report>p,
+.risk-interpretation>p,.related-disease>p {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5fbff;
+}
+
+.whole-status,
+.system-evaluation,.related-disease{
+    width: 300px;
+    height:540px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.health-chart,
+.system-report,.risk-interpretation{
+    width: 880px;
+    height: 540px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.system-evaluation>div{
+    padding: 30px 30px 0 30px;
+}
+.definition p,.risk-assessment p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+.definition p span{
+    color: #386cca;
+    font-size: 18px;
+}
+
+.risk-assessment div{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 36px;
+}
+
+#risk-evaluation .ar-star-full{
+    color: #f54f4f;
+}
+.risk-assessment div p{
+    margin-top: 40px;
+    font-size: 18px;
+    color: #333;
+}
+.gene-table{
+    padding: 40px 50px;
+}
+.gene-table >p{
+    float: right;
+    font-size: 16px;
+}
+
+.gene-table p a{
+    margin: 10px;
+}
+
+.gene-table table{
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    width: 780px;
+    overflow-y: hidden;
+    font-size: 16px;
+}
+
+.gene-table table > thead > tr:nth-child(odd)> td,
+.gene-table table > tbody > tr:nth-child(even) > td{
+    background-color: #f5f8ff;
+}
+.gene-table table thead td{
+    height: 50px;
+}
+.gene-table table td{
+    height: 36px;
+}
+.risk-interpretation>div{
+    padding: 30px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+.risk-gene{
+    text-align: center;
+    height: 90px;
+    border-bottom: 1px solid #ccc;
+}
+.risk-gene p{
+    font-size: 14px;
+    color: #333;
+}
+.risk-gene span{
+    font-size: 24px;
+    color: #f54f4f;
+    margin: 0 12px;
+}
+
+.risk-gene-info{
+    padding: 30px 0;
+    font-size: 14px;
+    color: #333;
+    height: 420px;
+}
+.introduction{
+    float: left;
+    width: 510px;
+    padding-right: 50px;
+    border-right: 1px dotted #ccc;
+}
+.introduction p,.mutation p{
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.mutation{
+    width: 300px;
+    float: left;
+    padding-left: 40px;
+}
+.mutation p span{
+    color: #386cca;
+}
+
+.risk-grade{
+    padding-top: 30px ;
+    padding-left: 30px;
+    height: 110px;
+    border-bottom: 1px solid #ccc;
+}
+.risk-grade p span{
+    margin-left: 10px;
+    font-size: 18px;
+    color: #f54f4f;
+}
+.disease-link{
+    font-size: 16px;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.disease-link li{
+    margin-bottom: 20px;
+}
+.disease-link a{
+    text-decoration: none;
+    color: #386cca;
+}
+.disease-link button{
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    color: #386cca;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    bottom: -160px;
+}
+.disease-link button:hover{
+    background-color: #f5f8ff;
+    color: #386cca;
+}
+.report-data{
+    border-top: none;
+}
+/*修改poshytip tip-violet的字体颜色*/
+.tip-violet{
+    color: #333;
+}

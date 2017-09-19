@@ -1,0 +1,26 @@
+.page-404{
+    margin: 0 auto;
+    width: 1200px;
+    height: 580px;
+    font-family: "Microsoft YaHei", serif;
+}
+.page-404 img{
+    margin: 130px 0 150px 120px;
+    float: left;
+}
+
+.error-info{
+    float: right;
+    font-size: 18px;
+    color: #333;
+    margin-top: 230px;
+    margin-right: 150px;
+}
+.error-info i{
+    color: #f57a7a;
+    margin-right: 10px;
+}
+.error-info li{
+    margin-top: 30px;
+    font-size: 14px;
+}

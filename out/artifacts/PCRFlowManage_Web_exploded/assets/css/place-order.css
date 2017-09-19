@@ -1,0 +1,89 @@
+.main-part{
+    width: 100%;
+    min-width: 1200px;
+}
+.main-part>div{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.order-form{
+    margin-top: 50px;
+    width: 1200px;
+    border: 1px solid #ccc;
+    font-size:14px;
+}
+
+.order-form>div{
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+#basicInfoTable tbody td{
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+
+#basicInfoTable tbody input,
+#basicInfoTable tbody textarea{
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+
+#sampleTable thead td{
+    vertical-align: middle;
+}
+
+#sampleTable tbody td{
+    padding: 0;
+}
+
+#sampleTable input,
+#sampleTable select{
+    width: 100%;
+    height: 30px;
+    border: none;
+    text-align: center;
+}
+#sampleTable textarea{
+    border: none;
+    margin: 0;
+    height: 25px;
+    resize: vertical;
+}
+.order-form .btn-primary{
+    background-color: #5c8ce6;
+    border: none;
+}
+
+.order-form  .btn-primary:hover{
+    background-color: #3976e5;
+}
+
+.fa-plus{
+    margin-right: 10px;
+}
+.fa-trash{
+    font-size: 24px;
+    color: #ccc;
+}
+.fa-trash:hover{
+    color: #f57a7a;
+    cursor: pointer;
+}
+
+.option-button{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.option-button button{
+    width: 150px;
+
+}

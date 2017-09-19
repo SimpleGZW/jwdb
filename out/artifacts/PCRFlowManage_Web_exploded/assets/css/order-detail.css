@@ -1,0 +1,461 @@
+*{
+    font-family: "Microsoft YaHei", serif;  /*统一使用微软雅黑字体*/
+}
+
+.main-part{
+    width: 100%;
+    min-width: 1200px;
+}
+.main-part>div{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.order-info{
+    padding: 20px 0;
+}
+
+.order-number{
+    background-color: #F5FBFF;
+    height: 70px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding:20px 20px 20px 20px;
+}
+.order-number span{
+    margin: 0 10px;
+    color: #5c8ce6;
+}
+
+.order-status{
+    margin-top: 20px;
+    height:40px;
+    background-color: #C2D3F2;
+    display: flex;
+    justify-content: space-around;
+}
+.order-status div{
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+}
+.order-status .current-status{
+    background-color: #F54F4F;
+    line-height: 50px;
+    height: 50px;
+    margin-top: -5px;
+    padding: 0 20px;
+}
+.status-info{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    background: url("../images/order-detail-bg1.jpg");
+    background-size: cover;
+    padding:0 80px;
+}
+
+.status-info>div{
+    font-size: 24px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #ddd;
+}
+
+.status-info p{
+    margin: 10px 0;
+}
+
+.status-info p:nth-of-type(1){
+    color: #5c8ce6;
+}
+
+
+.order-table,.sample-result{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.table-title{
+    background-color: #F5FBFF;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 40px;
+}
+
+.order-table table{
+    margin: 20px;
+    width: 1160px;
+    text-align: center;
+}
+.order-table table tr td{
+    vertical-align: middle;
+    text-align: left;
+    text-indent: 24px;
+}
+
+.order-table input{
+    margin:0 5px 0 10px;
+}
+
+.order-table table:nth-of-type(2) tr td:nth-last-child(1){
+    max-width: 200px;
+    wrap-option: wrap;
+}
+
+.options{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.options button{
+    margin: 0 10px;
+    border: none;
+}
+
+.options .btn-primary{
+    background-color: #5c8ce6;
+}
+.options .btn-primary:hover{
+    background-color: #3976e5;
+}
+.sample-result{
+    margin-bottom: 100px;
+}
+.sample-result table{
+    margin: 20px;
+    width: 1160px;
+    text-align: center;
+}
+
+.sample-result table a{
+    text-decoration: none;
+}
+
+.option-button-handler{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.option-button-handler button{
+    width: 100px;
+    border: none;
+    margin-left: 20px;
+}
+
+.tabledivcss{
+    overflow:auto;
+    width:1210px;
+    min-height: 200px;
+    max-height: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.tablecss{
+    vertical-align: middle;
+    width:1200px;
+}
+
+.tablecss thead td{
+    border:  1px solid #ccc;
+    vertical-align: middle;
+    padding: 10px;
+    text-align: center;
+}
+
+.tablecss tbody td{
+    border:  1px solid #ccc;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tablecss input{
+    border: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.fa-trash{
+    font-size: 24px;
+    color: #ccc;
+    padding: 10px;
+    align-content: center;
+}
+.fa-trash:hover{
+    color: #f57a7a;
+    cursor: pointer;
+}
+
+*{
+    font-family: Arial,"Microsoft YaHei",serif ;  /*统一使用微软雅黑字体*/
+}
+body{
+    margin: 0;
+    width: 100%;
+    min-width: 1200px;  /*预防缩放浏览器窗口带来的错误问题*/
+    background-color: #f7ffff;
+}
+a{
+    outline: none;
+    text-decoration: none;
+}
+a:focus{
+    outline: none;
+}
+
+.main-container{
+    margin: 20px auto 100px;
+    width: 1200px;
+}
+.main-container{
+    margin: 20px auto 0;
+    width: 1200px;
+    display: flex;
+    display: -webkit-flex;
+}
+
+/*左侧搜索条件*/
+.search-param{
+    width: 240px;
+    min-height: 550px;
+    height: auto;
+    padding-bottom: 230px;
+    align-self: flex-start;
+    background: linear-gradient(135deg,rgb(14,197,224),rgb(34,147,112));
+    margin-bottom: 100px;
+}
+.search-param>div:nth-of-type(1){
+    height: 80px;
+    width: 240px;
+    border-bottom: 1px solid #fff;
+    font-size: 24px;
+    padding-left: 30px;
+    line-height: 80px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.search-param>div:nth-of-type(1) i{
+    margin-right: 5px;
+}
+/*编号搜索、关键词搜索*/
+.search-detail{
+    padding: 10px 30px 0 30px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+}
+/*高级搜索*/
+.advanced-search-detail{
+
+}
+.advanced-search-detail .accordion-group{
+    border-bottom: 1px solid #fff;
+}
+.advanced-search-detail .accordion-heading{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px 0 30px;
+    color: #fff;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+.advanced-search-detail a{
+    color: #fff;
+    width: 200px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.advanced-search-detail i{
+    cursor: pointer;
+}
+.advanced-search-detail .accordion-inner{
+    padding-left: 10px;
+}
+.param-items{
+    display: flex;
+    display: -webkit-flex;
+    color: #fff;
+    text-align: left;
+}
+.param-items .item-title{
+    font-size: 14px;
+    width: 90px;
+    color: #fff;
+    line-height: 20px;
+    text-align: left;
+}
+.item-value{
+    font-size: 14px;
+    line-height: 20px;
+    width: 120px;
+}
+.item-value i{
+    margin-right: 10px;
+}
+/*右侧搜索结果*/
+.search-result{
+    width: 940px;
+    margin-left: 20px;
+}
+/*高级搜索结果展示部分*/
+.position{
+    height: 30px;
+}
+.position a{
+    text-decoration: none;
+    color: #fff;
+}
+.position a:hover{
+    color: #2dccc9;
+}
+.position ol{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 12px;
+    color: #fff;
+}
+/*修改面包屑分隔符*/
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #fff;
+    content: ">";
+}
+
+.plant-desc{
+    width: 940px;
+    height: 140px;
+    margin-top: 20px;
+    background-color: #fff;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.desc-info{
+    width: 640px;
+    height: 140px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.desc-info>div{
+    font-size: 18px;
+    color: #333;
+}
+.desc-info>button{
+    margin: 10px 0;
+    width: 160px;
+    height: 25px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #f5a062;
+    border: none;
+    outline: none;
+}
+.desc-info>p{
+    margin: 0;
+    font-size: 14px;
+}
+
+.plant-part-detail{
+    width: 940px;
+    margin-top: 15px;
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    /*display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;*/
+}
+.part-detail{
+    width: 300px;
+    background-color: #fff;
+    padding: 20px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    /*flex-grow: 0;
+    flex-shrink: 1;*/
+    display: inline-block;
+}
+
+.part-title{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.table-bordered tr:nth-of-type(odd){
+    background-color: #fef6ef;
+}
+
+.table-bordered tr:nth-of-type(even){
+    background-color: #e9fafa;
+}
+
+.plant-img{
+    width: 1200px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 140px;
+}
+.plant-img h2{
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+.img-carousel{
+    padding: 10px 10px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+.img-carousel i{
+    font-size: 48px;
+    color: #666;
+    cursor: pointer;
+}
+.img-carousel .disabled{
+    color: #ddd;
+    cursor: not-allowed;
+}
+.image-container{
+    width: 1200px;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.plant-img p{
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    width: 740px;
+}
+/*模态框展示图片详细信息*/
+.modal-content{
+    margin-left: -150px;
+    width: 830px;
+}
+.modal-body {
+    text-align: center;
+}
+.modal-body img{
+    width: 800px;
+    height: 600px;
+}

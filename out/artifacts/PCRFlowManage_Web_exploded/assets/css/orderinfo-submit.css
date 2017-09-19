@@ -1,0 +1,13 @@
+#progress-bar{
+    width: 130px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    /*left:55px;305px;555px;805px*/
+    left: 55px;
+    z-index: 999;
+    background: url("../images/progress-bar.png") no-repeat ;
+}

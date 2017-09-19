@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Microsoft YaHei", serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+.instructions-area{
+    /*border: 1px solid red;*/
+    width: 780px;
+    color: #333;
+    margin: 0 0 0 370px;
+}
+.instructions-area > span{
+    font-size: 18px;
+}
+.instructions-title{
+    margin: 0;
+    padding-top: 27px;
+    height: 80px;
+}
+.instructions-title h3{
+    font-size: 24px;
+    margin: 0;
+}
+
+#table-instructions{
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0 40px 0;
+    font-size: 16px;
+}
+
+#table-instructions > table{
+    border: none;
+}
+
+#pointer td{
+    height: 100px;
+    vertical-align: middle;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background: url("../images/blue-pointer.png") no-repeat center 28px;
+}
+
+#pointer .risk{
+    background: url("../images/pink-pointer.png") no-repeat center 28px;
+}
+#table-instructions .ar-star-full{
+    color: #f57a7a;
+}
+.table-info{
+    margin-top: 30px;
+}
+.table-info ul{
+    list-style-type: none;
+}
+
+#icon-instructions{
+    padding: 30px 0 80px 0;
+    font-size: 16px;
+}
+#icon-instructions > table{
+    margin-top: 30px;
+}
+#icon-instructions td{
+    vertical-align: middle;
+}
+
+#icon-instructions table thead tr{
+    height: 50px;
+    font-size: 16px;
+}
+
+#icon-instructions table tbody tr{
+    font-size: 14px;
+    height: 60px;
+}
+.info{
+    background-color: #f5f8ff;
+}
+#col1{
+    width: 140px;
+}
+#col2{
+    width: 164px;
+}
+.low-risk{
+    color: #29cc96;
+}
+.middle-risk{
+    color: #f59d4f;
+}
+.high-risk{
+    color: #f57a7a;
+}

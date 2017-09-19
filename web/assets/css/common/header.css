@@ -1,0 +1,135 @@
+body{
+    padding-top: 60px;
+}
+header{
+    width: 100%;
+    min-width: 1200px;
+    height: 80px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei", serif;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 2px 2px #ddd;
+}
+
+.head-container{
+    margin: 0 auto;
+    width: 1200px;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 160px;
+    float: left;
+}
+.searching-box{
+    width:400px;
+    float: right;
+    margin-top: 13px;
+    margin-right: 50px;
+}
+.searching-box span{
+    width: 90px;
+    font-size: 14px;
+    color: #999;
+    border-radius: 17px;
+}
+.searching-box i{
+    font-size: 18px;
+}
+.searching-box input{
+    width: 90px;
+    font-size: 14px;
+    color: #999;
+    border-radius: 17px;
+    padding-left: 17px;
+}
+#basic-addon{
+    color: white;
+    background-color: #5c8ce6;
+}
+
+.login{
+    height: 80px;
+    float: right;
+    font-size: 14px;
+}
+.login a{
+    border: none;
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 32px;
+}
+.login .btn-group>a{
+    border: 1px solid #ccc;
+}
+.login .btn-primary{
+    background-color: #5c8ce6;
+}
+.login .btn-primary:hover{
+    background-color: #3976e5;
+}
+.login .btn-danger{
+    margin-right: 100px;
+    border-radius: 17px;
+    padding: 6px 40px;
+    background-color: #fff;
+    border: 1px solid #f57a7a;
+    color: #f57a7a;
+}
+
+.login .btn-danger:hover,
+.login .btn-danger:focus{
+    border: 1px solid white;
+    color: white;
+    background-color: #f57a7a;
+    outline: none;
+}
+.user-info{
+    cursor: pointer;
+    width: 300px;
+}
+.user-info i{
+    font-size: 16px;
+    color: #5c8ce6;
+    line-height: 80px;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+.user-info img{
+    margin-top: -18px;
+}
+
+.user-info ul{
+    width: 150px;
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.user-info li{
+    width: 150px;
+    font-size: 14px;
+    color: #666;
+    height: 34px;
+    padding-left: 10px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.user-info li:hover{
+    background-color: #e5e5e5;
+}
+.user-info li i{
+    font-size: 16px;
+    color: #999;
+    margin-right: 10px;
+    line-height: 34px;
+    margin-left: 0;
+}
+.user-info li:nth-last-child(1){
+    border-top: 1px solid #ddd;
+    height: 40px;
+    line-height: 40px;
+}

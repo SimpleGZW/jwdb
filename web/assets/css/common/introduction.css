@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Microsoft YaHei", serif;
+}
+.main-container{
+    /*border: 1px solid blue;*/
+    margin: auto;
+    padding: 0;
+    width: 1200px;
+}
+
+.left-side{
+    width: 290px;
+    border: 1px solid #ddd;
+    color: #333;
+    float: left;
+    background-color: #fafbfc;
+    padding: 0 0 120px 0;
+}
+.left-side a{
+    text-decoration: none;
+}
+.content-title{
+    height: 80px;
+    padding: 23px 0;
+    border-bottom: 1px solid #ddd;
+}
+.content-title h2{
+    margin: 0 0 0 30px;
+    color: #386cca;
+
+}
+.ar-angle-up{
+    color:#386cca;
+}
+.ar-angle-up,.ar-angle-down{
+    float: right;
+    margin-right: 30px;
+}
+.content-detail li a{
+    color: #333;
+    margin-left: 30px;
+}
+.ar-read{
+    color:#386cca;
+    font-size: 30px;
+}
+
+.content-title h2 span{
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+.main-menu,.main-menu ul{
+    list-style-type: none;
+}
+.main-menu a:link,.main-menu a:hover,.main-menu a:active,.main-menu a:visited{
+    text-decoration: none;
+}
+.main-menu li div{
+    border-bottom: 1px solid #ddd;
+    padding-top: 20px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 1.0;
+    color: #666;
+}
+
+.sub-menu li{
+    height: 50px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.sub-menu .chosen,
+.sub-menu .chosen:hover{
+    border-left: 4px solid #5c8ce6;
+    background-color: #ebf1f5;
+}
+
+.sub-menu li:hover{
+    /*border-left: 1px solid #5c8ce6;*/
+    background-color: #f0f3f5;
+}
+.main-part{
+    width: 870px;
+    margin: 0 0 100px 330px;
+    padding-right: 20px;
+    /*border: 1px solid red;*/
+}
+.title{
+    border-bottom: 1px solid #ddd;
+    height: 80px;
+    padding-top: 28px;
+}
+.title h3{
+    margin: 0 0 0 10px;
+    font-size: 24px;
+    line-height: 1.0;
+    color: #333;
+}
+.details{
+    /*border: 1px solid yellow;*/
+    margin: 20px 0 0 10px;
+    font-size: 14px;
+    color:#666;
+}
+.details ul{
+    list-style-type: none;
+}
+.ar-rounded-ractangle{
+    color: #386cca;
+}
+.details h4{
+    margin: 0;
+    line-height: 1.0;
+    font-size: 16px;
+    color: #333;
+}
+.details h4 span{
+    margin-left: 10px;
+}
+.details li p{
+    margin: 25px 0 20px 26px;
+    line-height: 24px;
+    padding:0 20px 0 0;
+}

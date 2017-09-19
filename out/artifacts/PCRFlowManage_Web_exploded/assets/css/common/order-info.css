@@ -1,0 +1,133 @@
+*{
+    font-family: "Microsoft YaHei", serif;
+}
+.order-info{
+    width: 1200px;
+    margin: 0 auto;
+}
+.your-position{
+    padding-top: 17px;
+    height: 50px;
+    margin-left: 30px;
+}
+.your-position ol{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-size: 12px;
+    color: #333;
+}
+/*修改面包屑分隔符*/
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #333;
+    content: ">";
+}
+
+
+/*订单编号*/
+.order-number{
+    height: 50px;
+    font-size: 18px;
+    background-color: #f5fbff;
+    padding-left: 30px;
+    padding-top: 13px;
+    border: 1px solid #ccc;
+}
+.order-number span{
+    margin: 0 10px;
+    color: #5c8ce6;
+}
+
+/*订单状态*/
+.order-status{
+    margin-top: 20px;
+    padding: 10px 100px;
+    height: 40px;
+    background-color: #c2d3f2;
+    color: white;
+    font-size: 16px;
+}
+.order-status span{
+    margin: 0 90px;
+}
+
+
+/*订单详细信息*/
+.order-details{
+    margin: 20px 0;
+    padding: 0 70px;
+    height: 240px;
+    background: url("../../images/order-info-bg.jpg");
+}
+
+#latest{
+    color: #386cca;
+}
+.order-details span{
+    font-size: 24px;
+    color: #666;
+    line-height: 80px;
+}
+.order-details hr{
+    margin: 0;
+    height: 2px;
+    color: #ccc;
+}
+.order-details p{
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+}
+.report-data{
+    width: 1200px;
+    height: 360px;
+    padding: 30px 0;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    font-size: 120px;
+    color: #666;
+    text-align: center;
+}
+.report>i,.data>i{
+    color: #e5eeff;
+    position: relative;
+    z-index: -1;
+}
+.report>i{
+    bottom: 60px;
+}
+.data>i{
+    bottom: 180px;
+}
+.report-data h2{
+    margin: 0;
+    font-size: 24px;
+}
+.report p,.data ul{
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    list-style-type: none;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.report,.data{
+    width: 600px;
+    height: 300px;
+    float: left;
+    padding: 0 65px;
+}
+.report{
+    border-right: 1px dashed #ddd;
+}
+
+.data div{
+    color: #e5eeff;
+    margin-right: 20px;
+    float: left;
+}
+.data p{
+    margin: 0;
+}

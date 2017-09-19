@@ -1,0 +1,18 @@
+.not-found{
+    text-align: center;
+    font-size: 90px;
+}
+
+.not-found i{
+    color: #ccc;
+}
+.not-found div{
+    margin-top: 20px;
+    font-size: 24px;
+    color: #666;
+}
+
+.not-found p{
+    color: #999;
+    float: right;
+}

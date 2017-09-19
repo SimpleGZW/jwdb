@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 扫描包-->
+    <context:component-scan base-package="Aogu.Genes"/>
+
+    <!--
+    <context:component-scan/> 扫描指定的包中的类上的注解，常用的注解有：
+    @Controller 声明Action组件
+    @Service    声明Service组件
+    @Repository 声明Dao组件
+    @Component   泛指组件
+    @RequestMapping("/menu")  请求映射
+    @Resource  用于注入，( j2ee提供的 ) 默认按名称装配，@Resource(name="beanName")
+    @Autowired 用于注入，(spring提供的) 默认按类型装配
+    @Transactional( rollbackFor={Exception.class}) 事务管理
+    @ResponseBody
+    @Scope("prototype")   设定bean的作用域
+    -->
+
+    <!-- mvc适配器和映射器-->
+    <mvc:annotation-driven/>
+    <!--
+    <mvc:annotation-driven /> 会自动注册DefaultAnnotationHandlerMapping与AnnotationMethodHandlerAdapter两个bean
+    这两个bean是spring MVC为@Controllers分发请求所必须的。
+    同时提供了数据绑定支持，@NumberFormatannotation支持，@DateTimeFormat支持，@Valid支持，读写XML的支持（JAXB），读写JSON的支持（Jackson）。
+    -->
+
+    <!-- 支持上传文件 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8" />
+        <property name="maxUploadSize" value="104857600"/>
+        <property name="maxInMemorySize" value="4096"/>
+    </bean>
+
+
+    <!--
+    InternalResourceViewResolver在ModelAndView返回的视图名前加上prefix属性配置的前缀,再在最后加上suffix属性配置的后缀。
+    -->
+    <bean id="jsonView" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 使用默认的Servlet来响应静态文件-->
+    <mvc:default-servlet-handler/>
+
+    <!-- 拦截器 -->
+    <mvc:interceptors>
+        <!-- 多个拦截器，顺序执行 -->
+        <mvc:interceptor>
+            <!-- path="/*"和"/**"不同 -->
+            <mvc:mapping path="/*"/>
+            <bean class="Aogu.Genes.utils.LoginInterceptor">
+                <property name="uncheckUrls">
+                    <list>
+                        <!-- 后台管理员整合后注释掉 -->
+                        <value>/admin</value>
+                        <value>/login</value>
+                        <value>/loginin</value>
+                        <value>/index</value>
+                        <value>/register</value>
+                        <value>/registerin</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!--<mvc:resources mapping="/js/**" location="/assets/js/"/>-->
+    <!--<mvc:resources mapping="/styles/**" location="/assets/css/"/>-->
+    <!--<mvc:resources mapping="/images/**" location="/assets/images/"/>-->
+</beans>
