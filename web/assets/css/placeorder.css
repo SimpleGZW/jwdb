@@ -59,9 +59,18 @@
 
 }
 
+.register-status .disactive>div{
+    background: url("../images/register-bg1.png");
+
+}
 .register-status .active hr{
     color: #5C8CE6;
     background-color: #5C8CE6;
+}
+
+.register-status .disactive hr{
+    color: #ccc;
+    background-color: #ccc;
 }
 
 .register-form{
@@ -377,4 +386,13 @@
     text-align: center;
 }
 
-
+.promptImg{
+    width:420px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    right: 2%;
+    top: 35%;
+    background: url("../images/show/1.jpg");
+    background-size: 100% 100%;
+}

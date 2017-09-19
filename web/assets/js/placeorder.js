@@ -33,20 +33,105 @@ define(["jQuery"],function ($) {
                 }
             });
 
+            preStep();
             nextStep();
-            secondStep();
-            thirdStep();
-            fourthStep();
-            fifthStep();
-            sixthStep();
-            seventhStep();
-            eighthStep();
             formSubmit();
         }
 
-    /*手动提交表单*/
+        var pages = [
+            $('#accountInfo'),
+            $('#accountDetail'),
+            $('#constructDetail_A'),
+            $('#constructDetail_B'),
+            $('#constructDetail_C'),
+            $('#constructDetail_D'),
+            $('#constructDetail_E'),
+            $('#cssDetail'),
+            $('#materialDetail'),
+            $('#registerFinished')
+        ];
+
+        var currentPageNum = 0;
+        var nextPageNum;
+        var prePageNum;
+
+        /*上一步按钮点击事件*/
+        function preStep() {
+            $('.preStep').on('click',function () {
+                prePageNum = currentPageNum - 1 ;
+                pages[currentPageNum].css({
+                    'position': 'relative',
+                    'z-index': '-1',
+                    'margin-top': '100px'
+                });
+                pages[currentPageNum].animate({
+                    marginTop: '420'
+                }, 800, 'linear', function () {
+                    pages[currentPageNum].hide();
+                    switch (prePageNum) { // 去掉进度导航条高亮
+                        case 0:
+                            $('#details').addClass('disactive').removeClass('active');            break;
+                        case 1:
+                            $('#constructinfo').addClass('disactive').removeClass('active');     break;
+                        case 6:
+                            $('#details_css').addClass('disactive').removeClass('active');       break;
+                        case 7:
+                            $('#details_materia').addClass('disactive').removeClass('active');  break;
+                        case 8:
+                            $('#finished').addClass('disactive').removeClass('active');           break;
+                    }
+                    currentPageNum = prePageNum;
+
+                    pages[prePageNum].show()
+                        .css({
+                            'z-index': '100',
+                            'margin-top': '0px'
+                        });
+                });
+            })
+        }
+
+        /*下一步按钮点击事件*/
+        function nextStep() {
+            $('.nextStep').on('click',function () {
+                nextPageNum = ( currentPageNum + 1 ) % pages.length;
+                pages[currentPageNum].css({
+                    'position': 'relative',
+                    'z-index': '-1',
+                    'margin-bottom': '100px'
+                });
+                pages[currentPageNum].animate({
+                    marginTop: '-420'
+                }, 1000, 'linear', function () {
+                    pages[currentPageNum].hide();
+
+                    switch (currentPageNum) { // 将进度导航条高亮
+                        case 0:
+                            $('#details').removeClass('disactive').addClass('active');            break;
+                        case 1:
+                            $('#constructinfo').removeClass('disactive').addClass('active');     break;
+                        case 6:
+                            $('#details_css').removeClass('disactive').addClass('active');       break;
+                        case 7:
+                            $('#details_materia').removeClass('disactive').addClass('active');  break;
+                        case 8:
+                            $('#finished').removeClass('disactive').addClass('active');           break;
+                    }
+
+                    currentPageNum = nextPageNum;
+
+                    pages[nextPageNum].show()
+                        .css({
+                            'z-index': '100',
+                            'margin-top': '0px'
+                        });
+                });
+            })
+        }
+
+        /*手动提交表单*/
         function formSubmit() {
-            $('#ninthStep').on('click',function () {
+            $('#submitBtn').on('click',function () {
                 var basicData={
                     projectname:'',
                     projecttype:'',
@@ -70,7 +155,7 @@ define(["jQuery"],function ($) {
                 basicData.outputPPath=$('#registerForm input[name=outputPPath]').val();
                 basicData.matdataPath=$('#registerForm input[name=matdataPath]').val();
                 basicData.picturenum =$('#registerForm input[name=picturenum]').val();
-                 $(".modal-body").html("正在提交数据...");
+                $(".modal-body").html("正在提交数据...");
                 $('#modalBtn').click();
                 //msg为返回完成注册的用户名
                 $.ajax({
@@ -86,7 +171,6 @@ define(["jQuery"],function ($) {
                         if(data.statusCode == 200){
                             $('#materialDetail').fadeOut(1000, function () {
                                 $('#registerFinished').fadeIn();
-                                $('#finished').addClass('active');
                                 $('#registerFinished').find('.user-name a').text(data.message);
                             })
                         }
@@ -227,141 +311,6 @@ define(["jQuery"],function ($) {
                 $('#password2').parent().parent().find('i').last().removeClass('fa-info-circle fa-check-circle').addClass('fa-times-circle input-failed').parent().find('.prompt').show();
                 return false;
             }
-        }
-
-        /*下一步按钮点击事件*/
-        function nextStep() {
-            $('#nextStep').on('click',function () {
-                $('#accountDetail').show();
-                $('#accountInfo').css({
-                    'position': 'relative',
-                    'z-index': '-1',
-                    'margin-bottom': '100px'
-                });
-                $('#accountInfo').animate({
-                    marginTop: '-420'
-                }, 1000, 'linear', function () {
-                    $('#accountInfo').hide();
-                    $('#details').addClass('active');
-                });
-            })
-        }
-
-        //下一步按钮点击事件
-         function secondStep() {
-             $('#secondStep').on('click',function () {
-                 $('#constructDetail_A').show();
-                 $('#accountDetail').css({
-                     'position': 'relative',
-                     'z-index': '-1',
-                     'margin-bottom': '100px'
-                 });
-                 $('#accountDetail').animate({
-                     marginTop: '-420'
-                 }, 1000, 'linear', function () {
-                     $('#accountDetail').hide();
-                     $('#constructinfo').addClass('active');
-                 });
-             })
-         }
-
-        function thirdStep() {
-            $('#thirdStep').on('click',function () {
-                $('#constructDetail_B').show();
-                $('#constructDetail_A').css({
-                    'position': 'relative',
-                    'z-index': '-1',
-                    'margin-bottom': '100px'
-                });
-                $('#constructDetail_A').animate({
-                    marginTop: '-420'
-                }, 1000, 'linear', function () {
-                    $('#constructDetail_A').hide();
-                });
-            })
-        }
-
-        function fourthStep() {
-            $('#fourthStep').on('click',function () {
-                $('#constructDetail_C').show();
-                $('#constructDetail_B').css({
-                    'position': 'relative',
-                    'z-index': '-1',
-                    'margin-bottom': '100px'
-                });
-                $('#constructDetail_B').animate({
-                    marginTop: '-420'
-                }, 1000, 'linear', function () {
-                    $('#constructDetail_B').hide();
-                });
-            })
-        }
-
-
-        function fifthStep() {
-            $('#fifthStep').on('click',function () {
-                $('#constructDetail_D').show();
-                $('#constructDetail_C').css({
-                    'position': 'relative',
-                    'z-index': '-1',
-                    'margin-bottom': '100px'
-                });
-                $('#constructDetail_C').animate({
-                    marginTop: '-420'
-                }, 1000, 'linear', function () {
-                    $('#constructDetail_C').hide();
-                });
-            })
-        }
-
-        function sixthStep() {
-            $('#sixthStep').on('click',function () {
-                $('#constructDetail_E').show();
-                $('#constructDetail_D').css({
-                    'position': 'relative',
-                    'z-index': '-1',
-                    'margin-bottom': '100px'
-                });
-                $('#constructDetail_D').animate({
-                    marginTop: '-420'
-                }, 1000, 'linear', function () {
-                    $('#constructDetail_D').hide();
-                });
-            })
-        }
-
-        function seventhStep() {
-            $('#seventhStep').on('click',function () {
-                $('#cssDetail').show();
-                $('#constructDetail_E').css({
-                    'position': 'relative',
-                    'z-index': '-1',
-                    'margin-bottom': '100px'
-                });
-                $('#constructDetail_E').animate({
-                    marginTop: '-420'
-                }, 1000, 'linear', function () {
-                    $('#constructDetail_E').hide();
-                    $('#details_css').addClass('active');
-                });
-            })
-        }
-
-        function eighthStep() {
-            $('#eighthStep').on('click',function () {
-                $('#materialDetail').show();
-                $('#cssDetail').css({
-                    'position': 'relative',
-                    'z-index': '-1',
-                    'margin-bottom': '100px'
-                });
-                $('#cssDetail').animate({
-                    marginTop: '-420'
-                }, 1000, 'linear', function () {
-                    $('#cssDetail').hide();
-                    $('#details_materia').addClass('active');
-                });
-            })
         }
 
     })

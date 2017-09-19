@@ -61,7 +61,9 @@
                 <div class="status-num">6</div>
             </div><hr>
         </div>
+        <div class="promptImg">
 
+        </div>
         <div class="register-form">
 
             <form action="${pageContext.request.contextPath}/registerin" method="post" id="registerForm">
@@ -74,7 +76,7 @@
                             </div>
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
                             <div class="prompt">
-                                <div></div>
+                                <div>由数字、字母、下划线组成，如: TIA_170901</div>
                             </div>
                         </div>
                     </div>
@@ -114,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn" id="nextStep">下一步</button>
+                    <button type="button" class="btn nextStep">下一步</button>
                 </div>
 
                 <div class = "showcss" id="accountDetail">
@@ -212,7 +214,8 @@
 
                         </tbody>
                     </table></div>
-                    <button type="button" class="btn" id="secondStep">下一步</button>
+                    <button type="button" class="btn preStep">上一步</button>
+                    <button type="button" class="btn nextStep">下一步</button>
                 </div>
 
                 <div class = "showcss" id="constructDetail_A">
@@ -252,7 +255,35 @@
                             </div>
                         </div>
                     </div>
-                        <div class="tabledivcss"><table class="tablecss">
+
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabledivcss">
+                        <table class="tablecss">
                         <thead>
                         <tr>
                             <td rowspan="2">序号</td>
@@ -310,7 +341,8 @@
                         </tbody>
                     </table>
                     </div>
-                    <button type="button" class="btn" id="thirdStep">下一步</button>
+                    <button type="button" class="btn preStep">上一步</button>
+                    <button type="button" class="btn nextStep">下一步</button>
                 </div>
 
                 <div class = "showcss" id="constructDetail_B">
@@ -338,6 +370,42 @@
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="tabledivcss"><table class="tablecss">
                         <thead>
                         <tr>
@@ -375,7 +443,8 @@
 
                         </tbody>
                     </table></div>
-                    <button type="button" class="btn" id="fourthStep">下一步</button>
+                    <button type="button" class="btn preStep">上一步</button>
+                    <button type="button" class="btn nextStep">下一步</button>
                 </div>
 
                 <div class = "showcss" id="constructDetail_C">
@@ -403,6 +472,42 @@
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="tabledivcss"><table class="tablecss">
                         <thead>
                         <tr>
@@ -440,7 +545,8 @@
 
                         </tbody>
                     </table></div>
-                    <button type="button" class="btn" id="fifthStep">下一步</button>
+                    <button type="button" class="btn preStep">上一步</button>
+                    <button type="button" class="btn nextStep">下一步</button>
                 </div>
 
                 <div class = "showcss" id="constructDetail_D">
@@ -460,6 +566,42 @@
                         <div class="input-box">
                             <div>
                                 <p>D结构个数</p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
                                 <input type="text" name="">
                             </div>
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
@@ -513,7 +655,8 @@
 
                         </tbody>
                     </table></div>
-                    <button type="button" class="btn" id="sixthStep">下一步</button>
+                    <button type="button" class="btn preStep">上一步</button>
+                    <button type="button" class="btn nextStep">下一步</button>
                 </div>
 
                 <div class = "showcss" id="constructDetail_E">
@@ -533,6 +676,42 @@
                         <div class="input-box">
                             <div>
                                 <p>E结构个数</p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
+                                <input type="text" name="">
+                            </div>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <div class="prompt">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box" style="display: none">
+                            <div>
+                                <p></p>
                                 <input type="text" name="">
                             </div>
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
@@ -582,7 +761,8 @@
 
                         </tbody>
                     </table></div>
-                    <button type="button" class="btn" id="seventhStep">下一步</button>
+                    <button type="button" class="btn preStep">上一步</button>
+                    <button type="button" class="btn nextStep">下一步</button>
                 </div>
 
                 <div class = "showcss" id="cssDetail">
@@ -809,7 +989,8 @@
 
                         </tbody>
                     </table></div>
-                    <button type="button" class="btn" id="eighthStep">下一步</button>
+                    <button type="button" class="btn preStep">上一步</button>
+                    <button type="button" class="btn nextStep">下一步</button>
                 </div>
 
                 <div class = "showcss" id="materialDetail">
@@ -850,7 +1031,8 @@
 
                         </tbody>
                     </table></div>
-                    <button type="button" class="btn" id="ninthStep">下一步</button>
+                    <button type="button" class="btn preStep">上一步</button>
+                    <button type="button" class="btn nextStep" id="submitBtn">提交</button>
                 </div>
             </form>
 
@@ -863,6 +1045,7 @@
                 <a class="btn" type="button" href="${pageContext.request.contextPath}/submitOrderSuccess#/1">查看我的工程信息</a>
             </div>
         </div>
+    </div>
 </section>
 
 <!--公共尾部开始-->
