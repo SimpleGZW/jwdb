@@ -59,6 +59,13 @@ define(["jQuery"],function ($) {
         /*上一步按钮点击事件*/
         function preStep() {
             $('.preStep').on('click',function () {
+
+                //hide prompt image
+
+                $(".promptImg").css({
+                    'background': 'none',
+                });
+
                 prePageNum = currentPageNum - 1 ;
                 pages[currentPageNum].css({
                     'position': 'relative',
@@ -95,6 +102,13 @@ define(["jQuery"],function ($) {
         /*下一步按钮点击事件*/
         function nextStep() {
             $('.nextStep').on('click',function () {
+
+                //hide prompt image
+
+                $(".promptImg").css({
+                    'background': 'none',
+                });
+
                 nextPageNum = ( currentPageNum + 1 ) % pages.length;
                 pages[currentPageNum].css({
                     'position': 'relative',

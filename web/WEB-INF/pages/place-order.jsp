@@ -72,7 +72,7 @@
                         <div class="input-box">
                             <div>
                                 <p>计算工程名称</p>
-                                <input type="text" name="projectname" id="projectname">
+                                <input type="text" name="projectname" id="projectname" autofocus>
                             </div>
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
                             <div class="prompt">
@@ -270,14 +270,9 @@
                     </div>
 
                     <div>
-                        <div class="input-box" style="display: none">
+                        <div >
                             <div>
-                                <p></p>
-                                <input type="text" name="">
-                            </div>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                            <div class="prompt">
-                                <div></div>
+                                <p>&nbsp;&nbsp;详细数据:</p>
                             </div>
                         </div>
                     </div>
@@ -394,15 +389,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div>
-                        <div class="input-box" style="display: none">
+                        <div >
                             <div>
-                                <p></p>
-                                <input type="text" name="">
-                            </div>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                            <div class="prompt">
-                                <div></div>
+                                <p>&nbsp;&nbsp;详细数据:</p>
                             </div>
                         </div>
                     </div>
@@ -496,15 +487,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div>
-                        <div class="input-box" style="display: none">
+                        <div >
                             <div>
-                                <p></p>
-                                <input type="text" name="">
-                            </div>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                            <div class="prompt">
-                                <div></div>
+                                <p>&nbsp;&nbsp;详细数据:</p>
                             </div>
                         </div>
                     </div>
@@ -599,14 +586,9 @@
                         </div>
                     </div>
                     <div>
-                        <div class="input-box" style="display: none">
+                        <div >
                             <div>
-                                <p></p>
-                                <input type="text" name="">
-                            </div>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                            <div class="prompt">
-                                <div></div>
+                                <p>&nbsp;&nbsp;详细数据:</p>
                             </div>
                         </div>
                     </div>
@@ -708,15 +690,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div>
-                        <div class="input-box" style="display: none">
+                        <div >
                             <div>
-                                <p></p>
-                                <input type="text" name="">
-                            </div>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                            <div class="prompt">
-                                <div></div>
+                                <p>&nbsp;&nbsp;详细数据:</p>
                             </div>
                         </div>
                     </div>
