@@ -389,10 +389,8 @@
 .promptImg{
     width:420px;
     height: 400px;
-    background-color: red;
     position: absolute;
     right: 2%;
     top: 35%;
-    background: url("../images/show/1.jpg");
     background-size: 100% 100%;
 }

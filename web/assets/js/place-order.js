@@ -36,6 +36,7 @@ define(["jQuery"],function ($) {
             preStep();
             nextStep();
             formSubmit();
+            showImgs();
         }
 
         var pages = [
@@ -126,6 +127,7 @@ define(["jQuery"],function ($) {
                             'margin-top': '0px'
                         });
                 });
+
             })
         }
 
@@ -189,6 +191,25 @@ define(["jQuery"],function ($) {
             })
         }
 
+
+        function showImgs() {
+            /*绑定事件：点击输入框显示对应图片*/
+            var imgs = {
+                'materialnum': 1, // <input>'s name : image's number
+                'nodenum': 2
+            };
+
+            for (var key in imgs){
+                $("input[name='"+key+"']").on('focus', function () {
+                    $(".promptImg").css({
+                        'background': 'url("/jwdb/assets/images/show/'+imgs[$(this).attr('name')].toString()+'.jpg")',
+                        'background-size' : '100% 100%'
+                    });
+                });
+            }
+
+        }
+
         function setBasicStyle(){
 
             /*为所有的输入框添加focus样式*/
@@ -234,8 +255,6 @@ define(["jQuery"],function ($) {
             })
 
         }
-
-
 
         /*正则表达式用于验证用户名*/
         function validateUsername() {
