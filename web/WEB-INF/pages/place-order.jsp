@@ -1054,6 +1054,6 @@
 <script>
     webRoot="${pageContext.request.contextPath}";
 </script>
-<script src="${pageContext.request.contextPath}/assets/js/common/require.min.js" rel="script" defer data-main="${pageContext.request.contextPath}/assets/js/placeorder-main"></script>
+<script src="${pageContext.request.contextPath}/assets/js/common/require.min.js" rel="script" defer data-main="${pageContext.request.contextPath}/assets/js/place-order-main"></script>
 </body>
 </html>

@@ -81,6 +81,6 @@
 <script>
     webRoot="${pageContext.request.contextPath}";
 </script>
-    <script src="${pageContext.request.contextPath}/assets/js/common/require.min.js" rel="script" defer data-main="${pageContext.request.contextPath}/assets/js/my-order-main"></script>
+    <script charset="gb2312" src="${pageContext.request.contextPath}/assets/js/common/require.min.js" rel="script" defer data-main="${pageContext.request.contextPath}/assets/js/my-order-main"></script>
 </body>
 </html>

@@ -17,20 +17,20 @@ define(["jQuery","accordion","jPages"],function ($) {
         function initPagers() {
             $(".holder1").jPages({
                 containerID : "itemContainer1",
-                previous:"上一页",
-                next:"下一页",
+                previous:"Pre",
+                next:"Next",
                 perPage:10
             });
             $(".holder2").jPages({
                 containerID : "itemContainer2",
-                previous:"上一页",
-                next:"下一页",
+                previous:"Pre",
+                next:"Next",
                 perPage:10
             });
             $(".holder3").jPages({
                 containerID : "itemContainer3",
-                previous:"上一页",
-                next:"下一页",
+                previous:"Pre",
+                next:"Next",
                 perPage:10
             });
 
@@ -39,10 +39,10 @@ define(["jQuery","accordion","jPages"],function ($) {
 
         function initAccordion() {
             $("#myOrder").accordion({
-                'title':'我的工程',
+                'title':'My Projects',
                 'menus':[
-                    ['待处理工程','#/1'],
-                    ['已完成工程','#/2']
+                    ['Proccessing','#/1'],
+                    ['Finished','#/2']
                 ],
                 'width':'220px',
                 'hasSubmenus':false,
